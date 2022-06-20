@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header a {
+    color: black;
+    margin-right: 5px;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+a:hover,
+a:focus {
+    background-size: 100% 2px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    color: white;
+    height: 86vh;
+    width: 80%;
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/A\ M\ R\ E\ N.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.porque {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.porque p {
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    height: 7vh;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+.productos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.productos img{
+    padding-right: 20px;
+}
+.productos a img:hover{
+    filter: saturate(280%);
+}
+.Registrate {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    padding-top: 230px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.Registrate h4{
+    font-size: 22px;
+  margin-bottom: 20px;
+}
+.control {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  .Registrate .boton {
+    width: 100%;
+    background: white;
+    padding: 12px;
+    color: black;
+  }
+.boton:hover {
+    color: burlywood;
+    transform: scale(1.1);
+    transition: 2s;
+    /* transform: skew(5deg); */
+}
